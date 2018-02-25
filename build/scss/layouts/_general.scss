@@ -1,0 +1,36 @@
+/* =============================================================================
+	General
+  ============================================================================= */
+.container {
+  padding: 0px;
+  .top-border, .bottom-border, .left-border, .right-border {
+    background: $lttomato;
+    position: fixed;
+    z-index: 999;
+  }
+  .top-border, .bottom-border {
+    width: auto;
+    height: 7px;
+    left: 25px;
+    right: 25px;
+  }
+  .left-border, .right-border {
+    height: auto;
+    width: 7px;
+    top: 25px;
+    bottom: 25px;
+  }
+  .top-border{
+    top: 25px;
+  }
+  .bottom-border {
+    bottom: 25px;
+  }
+  .right-border {
+    right: 25px;
+  }
+  .left-border {
+    left: 25px;
+  }
+}
+

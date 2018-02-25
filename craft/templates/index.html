@@ -1,0 +1,86 @@
+{% extends "_layouts/index.twig" %}
+{% set bodyClass = "homepage" %}
+
+{% block inner_content %}
+
+ <!-- BEGIN .image-container -->
+ <div class="image-container">
+  <!-- <img src="../html/assets/graphics/what.jpg" alt="" /> -->
+</div>
+<!-- END .image-container -->
+
+<!-- BEGIN .intro-container -->
+<div class="intro-container" id="intro">
+
+ {% if entry.heading %}
+ <!-- BEGIN .headline-container -->
+ <div class="headline-container">
+   <h1>{{ entry.heading }}</h1>
+   {% endif %}
+   {% if entry.subheading %}
+   <h3>{{ entry.subheading }}</h3>
+   {% endif %}
+ </div>
+ <!-- END .headline-container -->
+
+
+</div>
+<!-- END .intro-container -->
+
+<!-- BEGIN .info-container -->
+<div class="info-container" id="info">
+  {% for block in entry.info %}
+  <!-- BEGIN .info-content -->
+  <div class="info-content">
+
+    {% if block.type == "headers" %}
+    <h3>{{ block.heading }}</h3>
+    <!-- BEGIN .end-info -->
+    <div class="end-info"></div>
+    <!-- END .end-info -->
+    <p>{{ block.subheading }}</p>
+    {% endif %}
+  </div>
+  <!-- END .info-content -->
+  {% endfor %} 
+
+  <!-- BEGIN .link-container -->
+  <div class="link-container">
+    {% if entry.body %}
+    {{ entry.body }} 
+    {% endif %} 
+  </div>
+  <!-- END .link-container --> 
+
+</div>
+<!-- END .info-container -->
+
+
+<!-- BEGIN #work.work-container -->
+<div class="work-container">
+
+
+  <!-- BEGIN .work-content -->
+  <div class="work-content" id="work">
+    {% for block in entry.work %}
+    <!-- BEGIN .col col1 -->
+    {% if block.type == "themes" %}
+    <div class="col col1">
+      <h4>{{ block.heading }}</h4>
+      {{ block.list }}
+      <p>{{ block.note }}</p>
+    </div>
+    <!-- END .col col1 -->
+    {% endif %}
+
+    {% endfor %}
+
+  </div>
+  <!-- END .work-content -->
+
+</div>
+<!-- END #work.work-container -->
+
+
+
+{% endblock %}

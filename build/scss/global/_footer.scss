@@ -1,0 +1,27 @@
+/* =============================================================================
+	Footer
+  ============================================================================= */
+  footer {
+    text-align: center;
+    font-size: 14px;
+    background: $lttomato;
+    margin: 30px 30px 30px 30px;
+    position: relative;
+    padding: 20px;
+    color: $cream;
+    font-size: 16px;
+    font-style: italic;
+    span {
+      font-size: 14px;
+    }
+    .copyright-container {
+      max-width: 750px;
+      margin: 0 auto;
+      a, a:link, a:visited {
+        color: $tomato;
+        &:hover {
+          color: $cream;
+        }
+      }
+    }
+  }

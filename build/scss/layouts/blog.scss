@@ -1,0 +1,64 @@
+/* =============================================================================
+  Blog
+============================================================================= */
+// .blog {
+//   .container {
+//     max-width: 960px;
+//   }
+//   .intro-container {
+//     text-align: center;
+//     width: 750px;
+//     max-width: 100%;
+//     margin: 0 auto;
+//     padding: 40px 0px 10px 0px;
+//     .page-title {
+//       color: $dkmauve;
+//       border-bottom: 2px solid $ltgrey;
+//       font-size: 42px;
+//       @include medium-down {
+//         font-size: 38px;
+//       }
+//       @include small-down {
+//         font-size: 30px;
+//       }
+//     }
+//   }
+// }
+
+// .blog-post {
+//   .headline-container {}
+//   .byline-container {
+//     font-style: italic;
+//     h1, h2, h3, h4, h5, h6 {
+//       color: $mdgrey;
+//     }
+//   }
+//   .entry-container {}
+//   .tag-container {
+//     display: flex;
+//   }
+// }
+// .blog-post.dkmauve {
+//   .byline-container {
+//     h1, h2, h3, h4, h5, h6 {
+//       color: $cream;
+//     }
+//   }
+//   .tag-container {
+//     a {
+//       color: $cream;
+//     }
+//   }
+// }
+// .blog-post.ltgrey {
+//   h1, h2, h3, h4, h5, h6 {
+//     color: $dkgrey;
+//   }
+// }
+// .blog-post.dkgrey {
+//   .tag-container {
+//     a {
+//       color: $ltgrey;
+//     }
+//   }
+// }

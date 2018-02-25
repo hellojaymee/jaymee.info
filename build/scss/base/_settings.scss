@@ -1,0 +1,100 @@
+// SETTINGS //
+// Fonts - Include Google Fonts Here
+// @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700");
+// Settings
+$wrap-width: 1175px;
+$wrap-padding: 0 20px;
+$global-radius: 5px;
+$container-padding-top: 60px;
+$container-padding-bottom: 60px;
+
+// Text Defaults
+$font-size:          18px;
+$font-family-1:      "Playfair", serif;
+$font-family-2:      "Playfair", serif;
+$font-weight-normal: normal;
+$font-weight-bold:   bold;
+
+$paragraph-line-height:   2;
+$paragraph-bottom-margin: 18px;
+
+// Header
+$h1-font-size:         32px;
+$h1-font-size-small:   32px;
+
+$h2-font-size:         26px;
+$h2-font-size-small:   26px;
+
+$h3-font-size:         24px;
+$h3-font-size-small:   24px;
+
+$h4-font-size:         22px;
+$h4-font-size-small:   22px;
+
+$h5-font-size:         18px;
+$h5-font-size-small:   18px;
+
+$h6-font-size:         16px;
+$h6-font-size-small:   16px;
+
+$header-line-height:  	1.2;
+$header-margin-top:   	$font-size * 0.2;
+$header-margin-bottom:	$font-size * 0.5;
+
+// COLORS //
+
+// Main Colors
+$cream: #FEFAF6 !default;
+$ltgrey: #E5E6E4 !default;
+$mdgrey: #CFD2CD !default;
+$dkgrey: #A6A2A2 !default;
+$tomato: #E66538 !default;
+$lttomato: #F6855D !default;
+$charcoal: #414141 !default;
+$black: #464646 !default;
+
+
+// Background Colors
+$html-background:    $cream !default;
+$color-background-1: $cream !default;
+$color-background-2: $ltgrey !default;
+$color-background-3: $mdgrey !default;
+
+// Border Colors
+$color-border-1: $tomato !default;
+$color-border-2: $dkgrey !default;
+$color-border-3: $mdgrey !default;
+
+// Link Colors
+$color-link-1:  $lttomato !default;
+$color-hover-1: $tomato !default;
+
+$color-link-2:  $lttomato !default;
+$color-hover-2: $tomato !default;
+
+$color-link-3:  $lttomato !default;
+$color-hover-3: $tomato !default;
+
+// Header Colors
+$color-header-1: $charcoal !default;
+$color-header-2: $lttomato !default;
+$color-header-3: $black !default;
+
+// Text Colors
+$color-text-1: $charcoal !default;
+$color-text-2: $lttomato !default;
+$color-text-3: $mdgrey !default;
+$color-text-4: $cream !default;
+
+// Status Colors
+$color-status-success: #2AA15F !default;
+$color-status-warning: #FA742E !default;
+$color-status-danger:  #F32F26 !default;
+
+// Social Media Colors
+// $color-social-media-facebook:  #45619d !default;
+// $color-social-media-linkedin:  #0e7cb7 !default;
+// $color-social-media-pinterest: #cd2129 !default;
+// $color-social-media-twitter:   #55acee !default;
+// $color-social-media-youtube:   #db2625 !default;

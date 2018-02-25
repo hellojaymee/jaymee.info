@@ -1,0 +1,188 @@
+// =============================================================================
+//  subnav Navigation
+//==============================================================================
+
+//settings
+
+
+//general
+$subnav-general-background:  null;
+$subnav-general-font-size:   16px;
+$subnav-general-line-height: null;
+$subnav-general-font-weight: 400;
+
+//level 1  --main
+$subnav-1-width:          null;
+$subnav-1-font-size:      14px;
+$subnav-1-line-height:    null;
+$subnav-1-text-transform: null;
+$subnav-1-link-padding:   20px;
+$subnav-1-border:         1px solid #fff;
+
+//level 2  --dropdown
+$subnav-2-font-size:      null;
+$subnav-2-line-height:    null;
+$subnav-2-text-transform: null;
+$subnav-2-link-padding:   20px 20px 20px 40px;
+$subnav-2-border:         null;
+
+//level 3  --flyout
+$subnav-3-font-size:      null;
+$subnav-3-line-height:    null;
+$subnav-3-text-transform: null;
+$subnav-3-link-padding:   20px 20px 20px 60px;
+$subnav-3-border:         null;
+
+//colors
+$color-subnav-1-background:       #333 !default;
+$color-subnav-1-background-hover: #333 !default;
+$color-subnav-1-text:             #fff!default;
+$color-subnav-1-text-hover:       #fff !default;
+
+$color-subnav-2-background:       #666 !default;
+$color-subnav-2-background-hover: #666 !default;
+$color-subnav-2-text:             #fff !default;
+$color-subnav-2-text-hover:       #fff !default;
+
+$color-subnav-3-background:       #999 !default;
+$color-subnav-3-background-hover: #999 !default;
+$color-subnav-3-text:             #fff !default;
+$color-subnav-3-text-hover:       #fff !default;
+
+//toggle icon
+$subnav-toggle-icon:       "\f0da"; //caret right
+$subnav-toggle-icon:       "\f105"; //angle right
+$subnav-toggle-font-size:  30px;
+$subnav-toggle-width:      50px;
+$subnav-toggle-right:      0;
+$subnav-toggle-color:      null;
+$subnav-toggle-background: null;
+
+
+nav.subnav {
+	width: 100%;
+	background: $subnav-general-background;
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	a {
+		display: block;
+		position: relative;
+		font-size:   $subnav-general-font-size;
+		font-weight: $subnav-general-font-weight;
+		line-height: $subnav-general-line-height;
+		
+		span.accordian_toggle {
+			width: $subnav-toggle-width;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: $subnav-toggle-right;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: $subnav-toggle-color;
+			background: $subnav-toggle-background;
+			&:after{
+				font-family: FontAwesome;
+				font-style: normal;
+				font-weight: normal;
+				text-decoration: inherit;
+				content: $subnav-toggle-icon;
+				color:  $subnav-toggle-color;
+				font-size: $subnav-toggle-font-size;
+				//transition: transform .2s ease;
+			}
+		}
+		span.accordian_toggle:hover:after {
+			transform: rotate(90deg);
+		}
+	}
+	
+	//parent ul
+	li.nav__list--parent {
+		a {
+			padding-right: $subnav-toggle-width;
+		}
+	}
+
+	//open state
+	li.accordian_open {
+		> a {
+			color: null;
+			background: null;
+		}
+		> a > span.accordian_toggle {
+			&:after {
+				transform: rotate(90deg);
+			}
+		}
+	}
+
+
+	//level 1
+	////////////////////////////////////////////////////////
+	ul {
+		li {
+			&:not(:last-child) a{border-bottom: $subnav-1-border;}
+			a {
+				font-size:      $subnav-1-font-size;
+				line-height:    $subnav-1-line-height;
+				text-transform: $subnav-1-text-transform;
+				padding:        $subnav-1-link-padding;
+				background:     $color-subnav-1-background;
+				color:          $color-subnav-1-text;
+			}
+			&:hover > a {
+				background:     $color-subnav-1-background-hover;
+				color:          $color-subnav-1-text-hover;
+			}
+		}
+	}
+
+	//level 2
+	////////////////////////////////////////////////////////
+	ul ul {
+		display: none;
+		li {
+			&:not(:last-child) a{border-bottom: $subnav-2-border;}
+			a {
+				font-size:      $subnav-2-font-size;
+				line-height:    $subnav-2-line-height;
+				text-transform: $subnav-2-text-transform;
+				padding:        $subnav-2-link-padding;
+				background:     $color-subnav-2-background;
+				color:          $color-subnav-2-text;
+			}
+			&:hover > a {
+				background:     $color-subnav-2-background-hover;
+				color:          $color-subnav-2-text-hover;
+			}
+		}
+	}
+
+	//level 3
+	////////////////////////////////////////////////////////
+	ul ul ul {
+		display: none;
+		li {
+			&:not(:last-child) a{border-bottom: $subnav-3-border;}
+			a {
+				font-size:      $subnav-3-font-size;
+				line-height:    $subnav-3-line-height;
+				text-transform: $subnav-3-text-transform;
+				padding:        $subnav-3-link-padding;
+				background:     $color-subnav-3-background;
+				color:          $color-subnav-3-text;
+			}
+			&:hover > a {
+				background:     $color-subnav-3-background-hover;
+				color:          $color-subnav-3-text-hover;
+			}
+		}
+	}
+
+}//
